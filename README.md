@@ -1,6 +1,6 @@
-# MyLearningRepo.
----
-MyLearningRepo © 2 by NLight41已取得 CC BY-NC 4.0許可
+# MyLearningRepo.  
+---  
+<small> MyLearningRepo © 2 by NLight41已取得 CC BY-NC 4.0許可  </small>
 詳見 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1)
 ---
 哈囉我是 **NLight** , 還是個學生  
