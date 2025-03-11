@@ -2,7 +2,7 @@
 ---  
   
 MyLearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0  
-- 本學習筆記採用 創用[CC BY-NC 4.0]<https://creativecommons.org/licenses/by-nc/4.0/>  
+- 本學習筆記採用 創用[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0)  
 - 請勿以本學習筆記作為商業行為使用  
 - 轉載請註明出處與作者  
   
