@@ -15,7 +15,7 @@ MyLearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
 也希望各位不吝嗇的指教與意見能為我帶來一條充滿學習熱忱的道路。  
 就這樣  
   
- *NLight*  
+ *NLight41*  
 ---
   
 ## 學習概要  
