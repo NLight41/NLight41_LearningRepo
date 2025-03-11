@@ -1,6 +1,6 @@
-# MyLearningRepo.  
+# MyLearningRepo  
 ---  
-[MyLearningRepo]<https://github.com/NLight41/MyLearningRepo> © 2 by [NLight41]<https://www.instagram.com/nlight_art.0410?igsh=MXUwNmtzYzAyc2N5NA%3D%3D&utm_source=qr> is licensed under [CC BY-NC 4.0]<https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1>  
+MyLearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0 
 ---
 哈囉我是 **NLight** , 還是個學生  
 最近奮發圖強, 開始享受自學的的樂趣  
