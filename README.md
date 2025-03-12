@@ -15,11 +15,16 @@ MyLearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
 希望能透過建立這個倉庫，逐漸了解GitHub的各種功能與使用方法  
 也希望各位不吝嗇的指教與意見能為我帶來一條充滿學習熱忱的道路。  
 就這樣  
+*NLight41*  
   
- *NLight41*  
 ---
 ## 倉庫導覽  
-  
+	1. CppLearning
+		1.1 Basics基本概念
+		1.2 
+	2. GitLearning
+	3. LinuxLearning
+	4. MarkDown.md
 ---
 ## 學習概要  
   
