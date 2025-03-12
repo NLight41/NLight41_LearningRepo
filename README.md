@@ -18,8 +18,11 @@ MyLearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
   
  *NLight41*  
 ---
+## 倉庫導覽  
   
+---
 ## 學習概要  
+  
 1. 自學 C++ 與基本用法  
   
 2. 自學 Git Bash 與 GitHub 使用及內容  
