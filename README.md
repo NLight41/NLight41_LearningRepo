@@ -28,4 +28,4 @@ MyLearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
   
 ---
   
-- 本倉庫並非一時一地之作，有意可參照 commit區 觀看此倉庫的歷程。
+- 本倉庫並非一時一地之作，有意可參照 Update區 觀看此倉庫的歷程。
