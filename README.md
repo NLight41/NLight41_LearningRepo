@@ -1,4 +1,5 @@
 # MyLearningRepo.  
+> 創建時間 03.07.2025
 ---  
   
 MyLearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0  
@@ -20,7 +21,6 @@ MyLearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
   
 ## 學習概要  
 1. 自學 C++ 與基本用法  
-  - 主要利用撰寫程式碼的過程，學習並理解如何使用  
   
 2. 自學 Git Bash 與 GitHub 使用及內容  
   
@@ -28,4 +28,5 @@ MyLearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
   
 ---
   
-- 本倉庫並非一時一地之作，有意可參照 Update區 觀看此倉庫的歷程。
+## 附註
+- 本倉庫並非一時一地之作，有意可參照 Commits區 觀看此倉庫的歷程。
