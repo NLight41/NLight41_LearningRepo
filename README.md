@@ -1,11 +1,5 @@
----
-title: "NLight41 的學習筆記"  
-description: "記錄 C++、Git、Linux 等學習歷程"  
-keywords: ["NLight41", "學習筆記", "C++", "Git", "Linux", "Markdown", "LearningRepo"]  
----
 # NLight41_LearningRepo.  
 > 創建時間 03.07.2025
-   
 ---  
   
 NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0  
