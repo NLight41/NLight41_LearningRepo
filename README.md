@@ -1,6 +1,3 @@
-<meta name="description" content="記錄 C++、Git、Linux 等學習歷程">
-<meta name="keywords" content="NLight41, 學習筆記, C++, Git, Linux, Markdown, LearningRepo">
-  
 ---
 title: "NLight41 的學習筆記"  
 description: "記錄 C++、Git、Linux 等學習歷程"  
@@ -8,6 +5,9 @@ keywords: ["NLight41", "學習筆記", "C++", "Git", "Linux", "Markdown", "Learn
 ---
 # NLight41_LearningRepo.  
 > 創建時間 03.07.2025
+  
+<meta name="description" content="記錄 C++、Git、Linux 等學習歷程">
+<meta name="keywords" content="NLight41, 學習筆記, C++, Git, Linux, Markdown, LearningRepo">
   
 ---  
   
