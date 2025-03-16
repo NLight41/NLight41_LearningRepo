@@ -1,7 +1,9 @@
-# NLight41_LearningRepo.  
+# NLight41_LearningRepo  
 > 創建時間 03.07.2025  
   
 > [社群連結/最新資訊統整 點擊此處](https://nlight41.github.io/NLight41_LearningRepo/WebStorage/Update)  
+  
+> [倉庫連結 點擊此處](https://github.com/NLight41/NLight41_LearningRepo)  
   
 ---  
   
