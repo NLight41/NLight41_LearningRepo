@@ -26,9 +26,10 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
   
 ---
 ## 倉庫導覽  
-> 此倉庫以資料夾為主作爲目錄分類資料，請點擊各個目錄(資料夾)進入各個類別小節
-	
-	1. CppLearning/ [此](https://nlight41.github.io/NLight41_LearningRepo/CppLearning/)
+> 此倉庫以資料夾為主作爲目錄分類資料，請點擊各個目錄(資料夾)進入各個類別小節  
+  
+	- 目錄
+	1. CppLearning/ 
 		1.1 Basics-基本概念
 		1.2 ControlFlow-控制流程
 		1.3 Functions-函式
@@ -38,6 +39,9 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
 	4. WebStorage/  
 	5. MarkDown.md  
 	
+[CppLearning 學習筆記](https://nlight41.github.io/NLight41_LearningRepo/CppLearning/)  
+[MarkDown 學習筆記](https://nlight41.github.io/NLight41_LearningRepo/MarkDown)
+
 ---
 ## 學習概要  
   
