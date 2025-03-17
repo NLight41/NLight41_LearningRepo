@@ -16,6 +16,9 @@
   
 ## 如何利用 GitBash 將 GitHub倉庫 同步至本地  
 1. 右鍵開啟 GitBash (如何快速開啟: 右鍵 -> 更多內容 -> Git Bash Here)  
-
+```git
+git config --global user.name "使用者名稱"
+git config --global user.email "使用者信箱"
+```
 
 
