@@ -11,3 +11,17 @@
   
 - Facebook (個人檔案) [點擊此處](https://www.facebook.com/profile.php?id=100081201527760)  
   
+---
+## GitHub 重要連結  
+  
+- GitHub [個人檔案](https://github.com/NLight41)  
+  
+- GitHub [NLight41_LearningRepo](https://github.com/NLight41/NLight41_LearningRepor)  
+  
+---
+## 版本紀錄  
+  
+
+### [v0.0.0] - 2025-03-07
+#### 初始版本
+
