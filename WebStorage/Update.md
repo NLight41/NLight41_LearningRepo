@@ -16,7 +16,7 @@
   
 - GitHub [個人檔案](https://github.com/NLight41)  
   
-- GitHub [NLight41_LearningRepo](https://github.com/NLight41/NLight41_LearningRepor)  
+- GitHub [NLight41_LearningRepo](https://github.com/NLight41/NLight41_LearningRepo)  
   
 ---
 ## 版本紀錄  
