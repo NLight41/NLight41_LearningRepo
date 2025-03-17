@@ -54,7 +54,8 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
 ---
   
 ## 附註
-- 本倉庫並非一時一地之作，有意可參照 [Commits區](https://github.com/NLight41/NLight41_LearningRepo/commits/main) 觀看此倉庫的歷程。
-  
+- 本倉庫並非一時一地之作，有意可參照 [Commits區](https://github.com/NLight41/NLight41_LearningRepo/commits/main) 觀看此倉庫的歷程。  
+- 有對於本倉庫的意見 或 有想要討論的問題內容歡迎隨時到本倉庫的 Discussions區 可以與我聊天或討論，非常歡迎！  
+- 有倉庫的問題也可以 email 給我，我有注意到都會儘量回覆！
 
 
