@@ -9,11 +9,11 @@
 ## 基礎語法-宣告變數  
 C++ 是一門"靜態弱型別"的語言，使用變數前我們應該先 **宣告型別**  
 ```cpp
-	int a=10; //整數
-	double b=3.14; //浮點數
-	char c='A'; //字元
-	std::string d="Hello"; //字串
-	bool e=ture; //布林值
+	int a = 10; //整數
+	double b = 3.14; //浮點數
+	char c = 'A'; //字元
+	string d = "Hello"; //字串
+	bool e = ture; //布林值
 ```
 
 ## 02-ControlFlow  
