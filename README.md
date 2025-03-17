@@ -39,8 +39,9 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
 	4. WebStorage/  
 	5. MarkDown.md  
 	
-[CppLearning 學習筆記](https://nlight41.github.io/NLight41_LearningRepo/CppLearning/)  
-[MarkDown 學習筆記](https://nlight41.github.io/NLight41_LearningRepo/MarkDown)
+[CppLearning 學習筆記 -尚未完成](https://nlight41.github.io/NLight41_LearningRepo/CppLearning/)  
+[GitLearning 學習筆記 -尚未完成](https://nlight41.github.io/NLight41_LearningRepo/GitLearning/)
+[MarkDown 學習筆記 -持續更新中](https://nlight41.github.io/NLight41_LearningRepo/MarkDown)
 
 ---
 ## 學習概要  
