@@ -3,7 +3,7 @@
   
 > [社群連結/最新資訊統整 點擊此處](https://nlight41.github.io/NLight41_LearningRepo/WebStorage/Update)  
   
-> [倉庫連結 點擊此處](https://github.com/NLight41/NLight41_LearningRepo)  
+> [GitHub 倉庫連結 點擊此處](https://github.com/NLight41/NLight41_LearningRepo)  
   
 ---  
   
@@ -13,6 +13,7 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
 - 轉載請註明出處與作者  
   
 ---
+## 關於我
   
 哈囉我是 **NLight** ，還是個學生  
 最近奮發圖強，開始享受自學的的樂趣。  
@@ -26,15 +27,17 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
 ---
 ## 倉庫導覽  
 > 此倉庫以資料夾為主作爲目錄分類資料，請點擊各個目錄(資料夾)進入各個類別小節
-
-	1. CppLearning
+	
+	1. CppLearning/  
 		1.1 Basics-基本概念
 		1.2 ControlFlow-控制流程
 		1.3 Functions-函式
 		1.4 DataStructures-資料結構
-	2. GitLearning
-	3. LinuxLearning
-	4. MarkDown.md
+	2. GitLearning/  
+	3. LinuxLearning/  
+	4. WebStorage/  
+	5. MarkDown.md  
+	
 ---
 ## 學習概要  
   
@@ -47,4 +50,7 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
 ---
   
 ## 附註
-- 本倉庫並非一時一地之作，有意可參照 Commits區 觀看此倉庫的歷程。
+- 本倉庫並非一時一地之作，有意可參照 [Commits區](https://github.com/NLight41/NLight41_LearningRepo/commits/main) 觀看此倉庫的歷程。
+  
+
+
