@@ -1,5 +1,6 @@
-# Git 學習筆記
-> 此內容教學以 Windows系統 為主。
+# Git 學習筆記  
+> 此內容教學以 Windows系統 為主。  
+  
 ---
 ## 如何開始你的 Git 第一步  
 - [Git 官網下載](https://git-scm.com/downloads)  
