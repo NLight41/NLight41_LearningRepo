@@ -24,8 +24,19 @@
 	git config --global user.email "使用者信箱"
 	git config --list
 ```
-3. 將想要的GitHub倉庫連結 `clone` 至本機
+  
+3. 將想要的GitHub倉庫連結 `clone` 至本機  
+  
 ```bash
-  git clone <倉庫url>
+  git clone <倉庫HTTPS>
+```
+
+4. 進入該資料夾，即可完成設定。
+**注意事項: `cd`後面的路徑必須使用`/`，而非Windows常用的`\`**  
+**更重要的是: 為了避免移動時發生錯誤，請儘量將路徑書寫完全，例如: `cd /c/user/name/桌面/repo`**  
+小技巧: 可用指令`pwd`來查詢當前位置
+
 ```bash
+  cd /~
+```
 
