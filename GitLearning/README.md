@@ -1,7 +1,7 @@
 # Git 學習筆記  
 > 此內容教學以 Windows系統 為主。  
   
-> 建立時間 03.10.2025 by NLight41
+> 建立時間 03.10.2025 by NLight41  
 > [返回 NLight41 本站](https://nlight41.github.io/NLight41_LearningRepo/)    
   
 ---
