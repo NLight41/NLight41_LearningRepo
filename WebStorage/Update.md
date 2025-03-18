@@ -21,7 +21,8 @@
 
 ### [v0.1.2] - 03.18.2025
 #### 新增內容：
-- 新增 sitemap檔 至根目錄，並提交至 google search console 優化 SEO。
+- 新增 sitemap檔 至根目錄，並提交更新至 google search console 。
+- 將網頁內容提交至 Bing WebMaster Tools。
   
 ### [v0.1.1] - 03.17.2025  
 #### 新增內容:  
