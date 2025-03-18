@@ -1,6 +1,6 @@
 # C++ 學習筆記  
 > 建立時間 03.10.2025 by NLight41  
-> [返回本站](https://nlight41.github.io/NLight41_LearningRepo/)
+> [返回 NLight41 本站](https://nlight41.github.io/NLight41_LearningRepo/)  
   
 ---
   
