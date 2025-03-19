@@ -1,5 +1,5 @@
 # 存放最新個人動態與資訊連結  
-> 建立時間：03.14.2025  
+> 建立時間：03.14.2025 by NLight41
 > [返回 NLight41 本站](https://nlight41.github.io/NLight41_LearningRepo/)  
   
 ---
@@ -47,3 +47,6 @@
 #### 初始版本:  
 - 建立倉庫及基礎目錄結構。  
 - 連結本地 Git 與 Git Bash基礎設定。  
+  
+---
+> [頁面快速導覽](https://nlight41.github.io/NLight41_LearningRepo/WebStorage/)
