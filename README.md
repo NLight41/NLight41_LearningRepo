@@ -45,20 +45,23 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
 [MarkDown 學習筆記 -持續更新中](https://nlight41.github.io/NLight41_LearningRepo/MarkDown)  
 
 ---
-## 📌學習概要  
+## 📌 學習概要  
   
-- [自學] C++ 基本用法 與 邏輯概念  
+1. 自學 C++ 基本用法 與 邏輯概念  
   
-- [自學] 利用 Git Bash 從本地到 GitHub 網站 深入研究 及 內容運用  
+2. 自學 利用 Git Bash 從本地到 GitHub 網站 深入研究 及 內容運用  
   
-- [自學] VirtualBox VM 虛擬機實作與 Linux Lite 內容學習  
+3. 自學 VirtualBox VM 虛擬機實作與 Linux Lite 內容學習  
   
-- [自學] 利用 Markdown文檔 建立 GitHub Pages，並利用 Google search console 與 Bing Webmaster Tools 學習優化網站 SEO 及其內容  
+4. 自學 利用 Markdown文檔 建立 GitHub Pages，並利用 Google search console 與 Bing Webmaster Tools 學習優化網站 SEO 及其內容  
   
-- [訓練] 利用 Chat-GPT 輔助學習，並訓練自己的 **提問技巧** 與 兩種創新思維的思考邏輯 (破壞性創新/持續性創新)  
+## 📌 當前訓練  
   
-- [未來學習計劃] 利用 VboxVM虛擬機 建立 Kali攻擊機 與 Metasploitable2靶機，學習 **資安防治手段** 與 原理探究  
+- 利用 Chat-GPT 輔助學習，並訓練自己的 **提問技巧** 與 兩種創新思維的思考邏輯 (破壞性創新/持續性創新)  
   
+## 📌 未來學習計劃  
+  
+- 利用 VboxVM虛擬機 建立 Kali攻擊機 與 Metasploitable2靶機，學習 **資安防治手段** 與 原理探究  
   
 ---
   
