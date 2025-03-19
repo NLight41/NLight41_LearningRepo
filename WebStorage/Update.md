@@ -49,4 +49,4 @@
 - 連結本地 Git 與 Git Bash基礎設定。  
   
 ---
-> [頁面快速導覽](https://nlight41.github.io/NLight41_LearningRepo/WebStorage/)
+> [返回網頁目錄](https://nlight41.github.io/NLight41_LearningRepo/WebStorage/)  
