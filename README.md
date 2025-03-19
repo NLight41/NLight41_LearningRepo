@@ -1,4 +1,4 @@
-# NLight41_LearningRepo  
+# [NLight41_LearningRepo](https://nlight41.github.io/NLight41_LearningRepo/)  
 > 創建時間 03.07.2025 by NLight41  
   
 > [社群連結/最新資訊統整/版本紀錄 點擊此處](https://nlight41.github.io/NLight41_LearningRepo/WebStorage/Update)  
@@ -13,7 +13,7 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
 - 轉載請註明出處與作者  
   
 ---
-## 關於我
+## ✏️關於我
   
 哈囉我是 **NLight** ，還是個學生  
 最近奮發圖強，開始享受自學的的樂趣。  
@@ -27,7 +27,7 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
 ---
 ## 倉庫導覽  
 > 此倉庫以資料夾為主作爲目錄分類資料，請點擊各個目錄(資料夾)進入各個類別小節  
-> [網頁目錄導覽](https://nlight41.github.io/NLight41_LearningRepo/WebStorage/)
+> [頁面快速導覽](https://nlight41.github.io/NLight41_LearningRepo/WebStorage/)
   
 	- 目錄
 	1. CppLearning/ 
