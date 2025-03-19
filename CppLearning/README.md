@@ -58,4 +58,4 @@ using namespace std;
 - 資料結構  
 
 ---
-> [返回快速導覽](https://nlight41.github.io/NLight41_LearningRepo/WebStorage/)  
+> [返回網頁目錄](https://nlight41.github.io/NLight41_LearningRepo/WebStorage/)  
