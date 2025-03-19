@@ -56,3 +56,6 @@ using namespace std;
 
 ## 04-DataStructures  
 - 資料結構  
+
+---
+> [頁面快速導覽](https://nlight41.github.io/NLight41_LearningRepo/WebStorage/)  
