@@ -53,7 +53,7 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
   
 3. 自學 VirtualBox VM 虛擬機實作與 Linux Lite 內容學習  
   
-4. 自學 利用 Markdown文檔 建立 GitHub Pages，並利用 Google search console 與 Bing Webmaster Tools 學習優化網站 SEO 及其內容  
+4. 自學 利用 Markdown文檔 建立 GitHub Pages，並利用 Google search console 與 Bing Webmaster Tools 學習網站 SEO 最佳化 及其內容  
   
 ## 📌 當前訓練  
   
