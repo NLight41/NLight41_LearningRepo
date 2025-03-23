@@ -96,6 +96,7 @@ Parameters  adaptiveHoloLoopOptimizer(Parameters initParams, double learningRate
 int main() {
 	// 初始參數設定  
 	Parameters initialParams {50.0, 1.0};
+	double learningRate = 0.01;
 	double momentumFactor = 0.9;	// 通常預設 momentum 參數為 0.9，經驗法則顯示 0.9 在加速收斂與保持穩定性之間有著良好的平衡點 
 	double holoFactor = 0.05;		// 根據誤差變化調整步長 
 	double threshold = 1e-3;		// 收斂判定閥值  
