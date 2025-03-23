@@ -3,23 +3,22 @@
 #include <chrono> 
 using std::cout;
 using std::endl;
-// µ{¦¡¦WºÙ: NLight41 ¥þ¹³°j°é³Ì¨Î¤Æ¾¹ / NLight41 HoloLoop Optimizer 
-// ªì¨Bºc·Q: 03.18.2025 ªìª©: 30.20.2025 by NLight41 
-// ¹w­p¤£¥u¨Ï¥Î std ¨ç¦¡®w¡A¬G¤£¥ý«Å§i©R¦WªÅ¶¡ 
-// ¦ý¥ý°w¹ï«Å§i std ªº cout, endl ¥H§Qµ{¦¡½X¼¶¼g 
- 
+// ç¨‹å¼åç¨±: NLight41 å…¨åƒè¿´åœˆæœ€ä½³åŒ–å™¨ / NLight41 HoloLoop Optimizer 
+// åˆæ­¥æ§‹æƒ³: 03.18.2025 åˆç‰ˆ: 30.20.2025 by NLight41 
+// é è¨ˆä¸åªä½¿ç”¨ std å‡½å¼åº«ï¼Œæ•…ä¸å…ˆå®£å‘Šå‘½åç©ºé–“ 
+// ä½†å…ˆé‡å°å®£å‘Š std çš„ cout, endl ä»¥åˆ©ç¨‹å¼ç¢¼æ’°å¯« 
 
-// ©w¸q¨t²Î°Ñ¼Æµ²ºc (µø±¡ªp¼W¥[°Ñ¼Æ) 
+// å®šç¾©ç³»çµ±åƒæ•¸çµæ§‹ (è¦–æƒ…æ³å¢žåŠ åƒæ•¸) 
 struct Parameters {
 	double param1;
 	double param2;
-	// ­pµe¬ã¨sÂX®i¦¨¦V¶q§Î¦¡¡A¥Î¥H³B¸Ì§ó½ÆÂøªº°Ñ¼Æ  
+	// è¨ˆç•«ç ”ç©¶æ“´å±•æˆå‘é‡å½¢å¼ï¼Œç”¨ä»¥è™•è£¡æ›´è¤‡é›œçš„åƒæ•¸ 
 	
 };
 
 
-// ¼ÒÀÀ¨ç¦¡ : ¼ÒÀÀ¨t²Î¹B§@¡A¨Ã­pºâ ¼ÒÀÀµ²ªG »P ¹w´Á­È ¤§¶¡ªº»~®t 
-// ³]©w ¹w´Á­È¬° 100¡A¦Ó¼ÒÀÀ¼Ò«¬¬° param1 * sin(param2) + 10 
+// æ¨¡æ“¬å‡½å¼ : æ¨¡æ“¬ç³»çµ±é‹ä½œï¼Œä¸¦è¨ˆç®— æ¨¡æ“¬çµæžœ èˆ‡ é æœŸå€¼ ä¹‹é–“çš„èª¤å·® 
+// è¨­å®š é æœŸå€¼ç‚º 100ï¼Œè€Œæ¨¡æ“¬æ¨¡åž‹ç‚º param1 * sin(param2) + 10 
 inline double simulationFunction(const Parameters &p) {
 	double outcome = p.param1 * std::sin(p.param2) + 10;
 	double expected = 100.0;
@@ -28,18 +27,18 @@ inline double simulationFunction(const Parameters &p) {
 }
 
 
-// ¨Ï¥Î¦³­­®t¤Àªk¦ô­p±è«× (ªìª©) 
+// ä½¿ç”¨æœ‰é™å·®åˆ†æ³•ä¼°è¨ˆæ¢¯åº¦ (åˆç‰ˆ) 
 inline void computeGradient(const Parameters &p, Parameters &grad, double delta = 1e-5){
 	Parameters p_temp = p;
 	double f0 = simulationFunction(p);
 	
-	// ­pºâ param1 ¹ï»~®tªº±è«× 
+	// è¨ˆç®— param1 å°èª¤å·®çš„æ¢¯åº¦  
 	p_temp.param1 = p.param1 + delta;
 	double f1 = simulationFunction(p_temp);
 	grad.param1 = (f1 - f0) / delta;
-	p_temp.param1 = p.param1;	// ­«¸m 
+	p_temp.param1 = p.param1;	// é‡ç½®
 	
-	// ­pºâ param2 ¹ï»~®tªº±è«× 
+	// è¨ˆç®— param2 å°èª¤å·®çš„æ¢¯åº¦ 
 	p_temp.param2 = p.param2 + delta;
 	double f2 = simulationFunction(p_temp);
 	grad.param2 = (f2 - f0) / delta;
@@ -47,12 +46,12 @@ inline void computeGradient(const Parameters &p, Parameters &grad, double delta 
 }
 
 
-// ¦Û¾AÀ³¥þ¹³°j°é³Ì¨Î¤Æºtºâªk : µ²¦X°Ê¶qªk«h »P ¥þ¹³¦^õX·§©À²z½× ¶i¦æ°Ñ¼Æ§ó·s 
-// mometumFactor : °Ê¶q¤ñ¨Ò / HoloFactor : ¥þ¹³¦^õX¦]¤l 
+// è‡ªé©æ‡‰å…¨åƒè¿´åœˆæœ€ä½³åŒ–æ¼”ç®—æ³• : çµåˆå‹•é‡æ³•å‰‡ èˆ‡ å…¨åƒå›žé¥‹æ¦‚å¿µç†è«– é€²è¡Œåƒæ•¸æ›´æ–° 
+// mometumFactor : å‹•é‡æ¯”ä¾‹ / HoloFactor : å…¨åƒå›žé¥‹å› å­ 
 Parameters  adaptiveHoloLoopOptimizer(Parameters initParams, double learningRate, double momentumFactor, double holoFactor, double threshold, int maxIterations) {
 	Parameters p = initParams;
 	Parameters grad{0.0, 0.0};
-	Parameters momentum{0.0, 0.0};	// «O¦s¤W¤@½üªº±è«×°Ê¶q­È  
+	Parameters momentum{0.0, 0.0}; // ä¿å­˜ä¸Šä¸€è¼ªçš„æ¢¯åº¦å‹•é‡å€¼  
 	
 	double prevError = simulationFunction(p);
 	double currError = prevError;
@@ -61,28 +60,28 @@ Parameters  adaptiveHoloLoopOptimizer(Parameters initParams, double learningRate
 	
 	while (currError > threshold && iteration < maxIterations) {
 		
-		// 1. ­pºâ±è«× (ªìª©) 
+		// 1. è¨ˆç®—æ¢¯åº¦ (åˆç‰ˆ) 
 		computeGradient(p, grad);
 		
-		// 2. °Ê¶q§ó·s : ±N·í«eªº±è«× »P ¤W¤@½ü´ú¸Õªº±è«× «ö¤ñ¨Ò¿Ä¦X 
+		// 2. å‹•é‡æ›´æ–° : å°‡ç•¶å‰çš„æ¢¯åº¦ èˆ‡ ä¸Šä¸€è¼ªæ¸¬è©¦çš„æ¢¯åº¦ æŒ‰æ¯”ä¾‹èžåˆ
 		momentum.param1 = momentumFactor * momentum.param1 + (1 - momentumFactor) * grad.param1;
 		momentum.param2 = momentumFactor * momentum.param2 + (1 - momentumFactor) * grad.param2;
 		
-		// 3. ¥þ¹³¦^õX½Õ¾ã : ®Ú¾Ú±è«×ÅÜ¤Æ¶q½Õ¾ã±è«×§ó·s³t«× 
+		// 3. å…¨åƒå›žé¥‹èª¿æ•´ : æ ¹æ“šæ¢¯åº¦è®ŠåŒ–é‡èª¿æ•´æ¢¯åº¦æ›´æ–°é€Ÿåº¦ 
 		double errorDiff = currError - prevError;
-		// holoAdjustment : ¥þ¹³¦^õXÅÜ¦]¡A·|ÀHµÛ»~®t ¤W¤É»P¤U­° ¶i¦æ °ÊºA­×¥¿ 
+		// holoAdjustment : å…¨åƒå›žé¥‹è®Šå› ï¼Œæœƒéš¨è‘—èª¤å·® ä¸Šå‡èˆ‡ä¸‹é™ é€²è¡Œ å‹•æ…‹ä¿®æ­£
 		double holoAdjustment = holoFactor * errorDiff;
 		
-		// 4. §ó·s°Ñ¼Æ : ±N °Ê¶q »P ¥þ¹³¦^õXÅÜ¦] µ²¦X«á¡A¶i¦æ±è«×¤U­°§ó·s 
+		// 4. æ›´æ–°åƒæ•¸ : å°‡ å‹•é‡ èˆ‡ å…¨åƒå›žé¥‹è®Šå›  çµåˆå¾Œï¼Œé€²è¡Œæ¢¯åº¦ä¸‹é™æ›´æ–° 
 		p.param1 -= learningRate * (momentum.param1 + holoAdjustment);
 		p.param2 -= learningRate * (momentum.param2 + holoAdjustment);
 		
-		// 5. §ó·s»~®t­È ¤Î ­¡¥N¦¸¼Æ 
+		// 5. æ›´æ–°èª¤å·®å€¼ åŠ è¿­ä»£æ¬¡æ•¸
 		prevError = currError;
 		currError = simulationFunction(p);
 		iteration++;
 		
-		// 6. ¿é¥X·í«e­¡¥Nª¬ªp¡A¥Î©ó °lÂÜª©¥» ¤Î ¤è«K½Õ¾ã  
+		// 6. è¼¸å‡ºç•¶å‰è¿­ä»£ç‹€æ³ï¼Œç”¨æ–¼ è¿½è¹¤ç‰ˆæœ¬ åŠ æ–¹ä¾¿èª¿æ•´  
 		cout << "Iteration: " << iteration
 			 << ", Error: " << currError 
 			 << ", param1: " << p.param1
@@ -95,15 +94,14 @@ Parameters  adaptiveHoloLoopOptimizer(Parameters initParams, double learningRate
 
 
 int main() {
-	// ªì©l°Ñ¼Æ³]©w 
+	// åˆå§‹åƒæ•¸è¨­å®š  
 	Parameters initialParams {50.0, 1.0};
-	double learningRate = 0.01;
-	double momentumFactor = 0.9;	// ³q±`¹w³] momentum °Ñ¼Æ¬° 0.9¡A¸gÅçªk«hÅã¥Ü 0.9 ¦b¥[³t¦¬ÀÄ»P«O«ùÃ­©w©Ê¤§¶¡¦³µÛ¨}¦nªº¥­¿ÅÂI 
-	double holoFactor = 0.05;		// ®Ú¾Ú»~®tÅÜ¤Æ½Õ¾ã¨Bªø 
-	double threshold = 1e-3;		// ¦¬ÀÄ§P©w»Ö­È 
+	double momentumFactor = 0.9;	// é€šå¸¸é è¨­ momentum åƒæ•¸ç‚º 0.9ï¼Œç¶“é©—æ³•å‰‡é¡¯ç¤º 0.9 åœ¨åŠ é€Ÿæ”¶æ–‚èˆ‡ä¿æŒç©©å®šæ€§ä¹‹é–“æœ‰è‘—è‰¯å¥½çš„å¹³è¡¡é»ž 
+	double holoFactor = 0.05;		// æ ¹æ“šèª¤å·®è®ŠåŒ–èª¿æ•´æ­¥é•· 
+	double threshold = 1e-3;		// æ”¶æ–‚åˆ¤å®šé–¥å€¼  
 	int maxIterations = 10000;
 	
-	// ­p®É Æ[¹î©Ê¯à 
+	// è¨ˆæ™‚ è§€å¯Ÿæ€§èƒ½ 
 	auto start = std::chrono::high_resolution_clock::now();
 	Parameters optimized = adaptiveHoloLoopOptimizer(initialParams, learningRate, momentumFactor, holoFactor, threshold, maxIterations);
 	auto end = std::chrono::high_resolution_clock::now();
