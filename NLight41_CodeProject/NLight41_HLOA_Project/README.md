@@ -3,11 +3,8 @@
 > [返回 NLight41 本站](https://nlight41.github.io/NLight41_LearningRepo/)  
 
 ---
-## HLOA - Holo Loop Optimization Algorithm  
-> *A novel optimization approach combining momentum and holographic feedback*
-
-### 何謂 HLOA project ？  
-《 HLOA 》 Holo Loop Optimization Algorithm，全像迴圈最佳化演算法   
+# 何謂 HLOA project ？  
+《 HLOA 》 Holo Loop Optimization Algorithm，全像迴圈最佳化演算法 by NLight41  
 - 使用梯度下降(Gradient Descent) 與 動量法(Momentum Method)  
 - 結合 全像回饋(Holo Feedback)來最小化系統模擬誤差，使系統趨近於最佳解  
 
