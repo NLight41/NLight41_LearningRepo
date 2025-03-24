@@ -4,7 +4,7 @@
 using std::cout;
 using std::endl;
 // 程式名稱: NLight41 全像迴圈最佳化器 / NLight41 HoloLoop Optimizer 
-// 初步構想: 03.18.2025 初版: 30.20.2025 by NLight41 
+// 初步構想: 03.18.2025 初版: 03.20.2025 by NLight41 
 // 預計不只使用 std 函式庫，故不先宣告命名空間 
 // 但先針對宣告 std 的 cout, endl 以利程式碼撰寫 
 
