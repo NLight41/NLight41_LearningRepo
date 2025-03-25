@@ -69,7 +69,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\toolbox\eigen-3.4.0\Eigen;C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\toolbox\CppAD-master\include\cppad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\C\toolbox\eigen-3.4.0\Eigen;C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\C\toolbox\CppAD-master\include\cppad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -79,7 +79,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\toolbox\eigen-3.4.0\Eigen;C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\toolbox\CppAD-master\include\cppad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\C\toolbox\eigen-3.4.0\Eigen;C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\C\toolbox\CppAD-master\include\cppad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -89,7 +89,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\toolbox\eigen-3.4.0\Eigen;C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\toolbox\CppAD-master\include\cppad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\C\toolbox\eigen-3.4.0\Eigen;C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\C\toolbox\CppAD-master\include\cppad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -99,7 +99,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\toolbox\eigen-3.4.0\Eigen;C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\toolbox\CppAD-master\include\cppad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\C\toolbox\eigen-3.4.0\Eigen;C:\Users\oaona\OneDrive\桌面\NLight41_LearningRepo\NLight41_CodeProject\NLight41_HLOA_Project\C\toolbox\CppAD-master\include\cppad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>

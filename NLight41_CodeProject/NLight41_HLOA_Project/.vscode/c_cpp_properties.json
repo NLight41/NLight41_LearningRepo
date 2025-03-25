@@ -4,9 +4,9 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/toolbox/eigen-3.4.0",
                 "C:/toolbox/CppAD-master/include",
-                "C:/toolbox/MinGW/include"
+                "C:/toolbox/MinGW/include",
+                "C:/toolbox/eigen-3.4.0"
             ],
             "defines": [
                 "_DEBUG",

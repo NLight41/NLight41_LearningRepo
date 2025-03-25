@@ -7,26 +7,26 @@
             "command": "g++",
             "args": [
                 "-g",
-                "-O2",
+                "${file}",
                 "-std=c++17",
-                "${workspaceFolder}/src/main.cpp",
-                "-I${workspaceFolder}/include",
-                "-I${workspaceFolder}/HLOA/v0.1.1/include",
                 "-I/C/toolbox/CppAD-master/include/cppad",
-                "-I/C/toolbox/Eigen-3.4.0/Eigen",
+                "-I/C/toolbox/eigen-3.4.0/Eigen",
                 "-o",
-                "${workspaceFolder}/bin/main"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "Build task for compiling the main.cpp file.",
             "problemMatcher": [
                 "$gcc"
             ]
         },
-        
         {
             "type": "cppbuild",
-            "label": "C/C++: g++.exe 建置使用中檔案",
-            "command": "C:/toolbox/MinGW/bin/g++.exe",
+            "label": "C/C++: gcc.exe 建置使用中檔案",
+            "command": "C:/toolbox/MinGW/bin/gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",

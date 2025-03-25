@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Release/NLight41_HLOA.exe"
+			"path" : "RelWithDebInfo/NLight41_HLOA.exe"
 		},
 		{
-			"path" : "Release/NLight41_HLOA.pdb"
+			"path" : "RelWithDebInfo/NLight41_HLOA.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -45,18 +45,18 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/oaona/OneDrive/\u684c\u9762/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_Project/toolbox/eigen-3.4.0/Eigen"
+					"path" : "C:/Users/oaona/OneDrive/\u684c\u9762/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_Project/C/toolbox/eigen-3.4.0/Eigen"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/oaona/OneDrive/\u684c\u9762/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_Project/toolbox/CppAD-master/include/cppad"
+					"path" : "C:/Users/oaona/OneDrive/\u684c\u9762/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_Project/C/toolbox/CppAD-master/include/cppad"
 				}
 			],
 			"language" : "CXX",
@@ -86,11 +86,11 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /INCREMENTAL:NO",
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
 				"role" : "flags"
 			},
 			{
