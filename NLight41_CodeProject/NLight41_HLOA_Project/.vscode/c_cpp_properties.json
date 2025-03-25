@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:/toolbox/eigen-3.4.0",
-                "C:/toolbox/CppAD-master/include"
+                "C:/toolbox/CppAD-master/include",
+                "C:/toolbox/MinGW/include"
             ],
             "defines": [
                 "_DEBUG",
