@@ -19,14 +19,14 @@ constexpr int DIM = 2; // 參數維度
 
 // 目標函數 (非凸)  
 CppAD::AD<double> simulationFunction(const Parameters &p) {
-	return p(0) * CppAD::sin(p(1) + 10;
+	return p(0) * CppAD::sin(p(1)) + 10;
 }
 
 
 
 // 自動微分計算梯度 
 Parameters computeGradient(const Parameters &p) {
-	CppAD::ADFun<double> grad f;
+	CppAD::ADFun<double> f;
 	std::vector<CppAD::AD<double>> X(DIM);
 	std::vector<CppAD::AD<double>> Y(1);
 	
@@ -67,7 +67,7 @@ Parameters  adaptiveHoloLoopOptimizer(Parameters initParams, double learningRate
 			
 			#pragma omp section
 			for (int i = 0; i < DIM; ++i){
-				momentum(i) momentumFactor * momentum(i) + (1 - momentumFactor) * grad(i);
+				momentum(i) = momentumFactor * momentum(i) + (1 - momentumFactor) * grad(i);
 				
 			}
 		}
@@ -83,7 +83,7 @@ Parameters  adaptiveHoloLoopOptimizer(Parameters initParams, double learningRate
 		}
 	
 		prevError = currError;
-		currError = simulationFunction(p);
+		currError = CppAD::Value(simulationFunction(p));
 		iteration++;
 		
 		cout << "Iteration: " << iteration
@@ -100,7 +100,7 @@ Parameters  adaptiveHoloLoopOptimizer(Parameters initParams, double learningRate
 int main() {
 	// 初始參數設定 
 	Parameters initialParams (DIM);
-	inittailParams << 50.0, 1.0;
+	initialParams << 50.0, 1.0;
 	
 	double learningRate = 0.01;
 	double momentumFactor = 0.9;	// 通常預設 momentum 參數為 0.9，經驗法則顯示 0.9 在加速收斂與保持穩定性之間有著良好的平衡點 
