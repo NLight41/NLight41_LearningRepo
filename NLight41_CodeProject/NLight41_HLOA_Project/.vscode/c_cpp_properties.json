@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:/eigen-3.4.0",
-                "C:/CppAD-master/include"
+                "C:/CppAD-master/include",
+                "${workspaceFolder}/build"
             ],
             "defines": [
                 "_DEBUG",
