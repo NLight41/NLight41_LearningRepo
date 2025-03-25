@@ -7,21 +7,44 @@
             "command": "g++",
             "args": [
                 "-g",
-                "-O2", // Optimization flag
-                "-std=c++17", // Specify the C++ standard
+                "-O2",
+                "-std=c++17",
                 "${workspaceFolder}/src/main.cpp",
                 "-I${workspaceFolder}/include",
-                "-I${workspaceFolder}/HLOA/v0.1.1/include", // Include HLOA v0.1.1 headers
+                "-I${workspaceFolder}/HLOA/v0.1.1/include",
                 "-I/C/toolbox/CppAD-master/include/cppad",
                 "-I/C/toolbox/Eigen-3.4.0/Eigen",
                 "-o",
                 "${workspaceFolder}/bin/main"
             ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 建置使用中檔案",
+            "command": "C:/toolbox/MinGW/bin/g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:/toolbox/MinGW/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": ["$gcc"]
+            "detail": "偵錯工具產生的工作。"
         }
     ]
 }
