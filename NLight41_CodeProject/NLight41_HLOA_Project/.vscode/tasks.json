@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/src/main.cpp",
+                "-I${workspaceFolder}/include",
+                "-I/C/toolbox/CppAD-master/include/cppad",
+                "-I/C/toolbox/Eigen-3.4.0/Eigen",
+                "-o",
+                "${workspaceFolder}/bin/main"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

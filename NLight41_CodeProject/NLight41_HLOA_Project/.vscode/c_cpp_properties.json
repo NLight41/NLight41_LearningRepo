@@ -4,8 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/toolbox/eigen-3.4.0/Eigen",
-                "C:/toolbox/CppAD-master/include/cppad"
+                "C:/toolbox/eigen-3.4.0",
+                "C:/toolbox/CppAD-master/include"
             ],
             "defines": [
                 "_DEBUG",
