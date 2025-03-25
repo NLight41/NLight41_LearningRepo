@@ -7,6 +7,8 @@
             "command": "g++",
             "args": [
                 "-g",
+                "-O2", // Optimization flag
+                "-std=c++17", // Specify the C++ standard
                 "${workspaceFolder}/src/main.cpp",
                 "-I${workspaceFolder}/include",
                 "-I/C/toolbox/CppAD-master/include/cppad",

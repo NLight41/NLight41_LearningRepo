@@ -1,0 +1,10 @@
+^C:\USERS\OAONA\ONEDRIVE\桌面\NLIGHT41_LEARNINGREPO\NLIGHT41_CODEPROJECT\NLIGHT41_HLOA_PROJECT\BUILD\CMAKEFILES\93438D6C74009952CCE1E93720E52D08\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/oaona/OneDrive/桌面/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_Project -BC:/Users/oaona/OneDrive/桌面/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_Project/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/oaona/OneDrive/桌面/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_Project/build/NLight41_HLOA.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^C:\USERS\OAONA\ONEDRIVE\桌面\NLIGHT41_LEARNINGREPO\NLIGHT41_CODEPROJECT\NLIGHT41_HLOA_PROJECT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/oaona/OneDrive/桌面/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_Project -BC:/Users/oaona/OneDrive/桌面/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_Project/build --check-stamp-file C:/Users/oaona/OneDrive/桌面/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_Project/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
