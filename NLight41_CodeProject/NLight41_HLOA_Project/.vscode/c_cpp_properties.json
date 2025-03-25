@@ -5,8 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:/eigen-3.4.0",
-                "C:/CppAD-master/include",
-                "${workspaceFolder}/build"
+                "C:/CppAD-master/include/cppad"
             ],
             "defines": [
                 "_DEBUG",
@@ -15,7 +14,7 @@
             ],
             "windowsSdkVersion": "10.0.22621.0",
             "compilerPath": "C:/MinGW/bin/g++.exe",
-            "cStandard": "c17",
+            "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-gcc-x64",
             "mergeConfigurations": true
