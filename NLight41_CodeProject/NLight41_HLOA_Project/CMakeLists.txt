@@ -11,4 +11,4 @@ include_directories(${EIGEN_INCLUDE_DIR} ${CPPAD_INCLUDE_DIR})
 
 
 # 設定可執行檔
-add_executable(NLight41_HLOA NLight41_HLOA_v0.1.0.cpp)
+add_executable(NLight41_HLOA NLight41_HLOA_v0.1.1.cpp)
