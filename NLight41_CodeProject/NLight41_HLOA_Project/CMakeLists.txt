@@ -5,7 +5,7 @@ project(NLight41_HLOA)
 set(CMAKE_CXX_STANDARD 17)
 
 # 加入 Eigen 和 CppAD
-find_package(EIGEN3 REQUIRED)
+find_package(Eigen3 REQUIRED)
 find_package(CppAD REQUIRED)
 
 # 設定可執行檔
