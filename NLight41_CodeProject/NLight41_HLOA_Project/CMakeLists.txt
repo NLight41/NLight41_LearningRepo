@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(NLight41_HLOA_Project)
+project(NLight41_HLOA)
 
 # 指定 C++ 標準
 set(CMAKE_CXX_STANDARD 17)
@@ -11,5 +11,4 @@ include_directories(${EIGEN_INCLUDE_DIR} ${CPPAD_INCLUDE_DIR})
 
 
 # 設定可執行檔
-add_executable(NLight41_HLOA_Project NLight41_HLOA_v0.1.0.cpp)
-target_link_libraries(NLight41_HLOA_Project Eigen3::Eigen CppAD::CppAD)
+add_executable(NLight41_HLOA NLight41_HLOA_v0.1.0.cpp)
