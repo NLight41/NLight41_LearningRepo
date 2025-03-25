@@ -11,3 +11,10 @@ find_package(CppAD REQUIRED)
 # 設定可執行檔
 add_executable(NLight41_HLOA NLight41_HLOA_v0.1.0.cpp)
 target_link_libraries(NLight41_HLOA Eigen3::Eigen CppAD::CppAD)
+
+# 設定自動生成 CppAD 的 configure.hpp
+configure_file(
+C:/CppAD-master/include/cppad/configure.hpp.in
+{CMAKE_BINARY_DIR}/include/cppad/configure.hpp
+)
+include_directories(${CMAKE_BINARY_DIR}/include)
