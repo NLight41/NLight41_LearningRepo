@@ -11,6 +11,7 @@
                 "-std=c++17", // Specify the C++ standard
                 "${workspaceFolder}/src/main.cpp",
                 "-I${workspaceFolder}/include",
+                "-I${workspaceFolder}/HLOA/v0.1.1/include", // Include HLOA v0.1.1 headers
                 "-I/C/toolbox/CppAD-master/include/cppad",
                 "-I/C/toolbox/Eigen-3.4.0/Eigen",
                 "-o",
