@@ -6,7 +6,6 @@
                 "${workspaceFolder}/**",
                 "C:/eigen-3.4.0",
                 "C:/CppAD-master/include"
-
             ],
             "defines": [
                 "_DEBUG",
