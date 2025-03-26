@@ -56,6 +56,8 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
   
 4. 自學 利用 Markdown文檔 建立 GitHub Pages，並利用 Google search console 與 Bing Webmaster Tools 學習網站 SEO 最佳化 及其內容  
   
+5. 自學 Virsual Studio 2022/ Virsual Studio Code 之 IDE環境運用
+  
 ## 📌 當前訓練  
   
 - 利用 Chat-GPT 輔助學習，並訓練自己的 **提問技巧** 與 兩種創新思維的思考邏輯 (破壞性創新/持續性創新)  
