@@ -1,14 +1,15 @@
 # ============== MakeLists.txt ================
-# [v0.2.0] - 03.27.2025 by NLight41
+# [v0.2.1] - 03.27.2025 by NLight41
 
-# 本 CMake 設定檔的主要功能: 
-# 1. 設定 CMake 版本、專案名稱與 C++ 標準。
-# 2. 設定與檢查函式庫 (Eigen、CppAD)，支援自動下載 (如果本機無法找到相對應的檔案)。
-# 3. 設定編譯輸出目錄，確保 VS2022 找的到執行檔。
-# 4. 設定可執行檔，並正確連結至 目標函式庫(Library) 及 標頭檔(include)。
+# 主要功能: 
+# 1. 設定 CMake 版本、專案名稱與 C++ 標準
+# 2. 設定與檢查函式庫 (Eigen、CppAD)，支援自動下載 (如果本機無法找到相對應的檔案)
+# 3. 確保 `configure.hpp.in` 能成功轉換為 `configure.hpp` 
+# 4. 設定編譯輸出目錄，確保 VS2022 找的到執行檔
+# 5. 設定可執行檔，並正確連結至 目標函式庫(Library)
 
 
-# 設定 CMake 最低版本 及 專案名稱
+# 設定 CMake 最低版本 & 專案名稱
 cmake_minimum_required(VERSION 3.16)
 project(NLight41_LearningRepo)
 
@@ -57,15 +58,31 @@ include_directories(${EIGEN_INCLUDE_DIR} ${CPPAD_INCLUDE_DIR})
 
 # 設定輸出目錄，確保 VS2022 不會找不到執行檔
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+file(MAKE_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
 
 # 確保 `configure.hpp.in` 能成功轉換為 `configure.hpp`
-configure_file(
-	${CMAKE_SOURCE_DIR}/cppad/configure.hpp.in
-	${CMAKE_BINARY_DIR}/cppad/configure.hpp 
-	@only
-)
-include_directories(${CMAKE_BINARY_DIR})
+set(CONFIGURE_HPP_IN "${CPPAD_INCLUDE_DIR}/cppad/configure.hpp.in")
+set(CONFIGURE_HPP_OUT "${CMAKE_BINARY_DIR}/cppad/configure.hpp")
 
-# 設定可執行檔
+#確保輸出目錄存在
+file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/cppad/")
+
+add_custom_command(
+	OUTPUT ${CONFIGURE_HPP_OUT}
+	COMMAND ${CMAKE_COMMAND} -E copy
+		${CONFIGURE_HPP_IN}
+		${CONFIGURE_HPP_OUT}
+	DEPENDS ${CONFIGURE_HPP_IN}
+	COMMENT "轉換 configure.hpp.in 為 configure.hpp"
+)
+
+# 確保 `configure.hpp` 轉換後才能執行編譯
+add_custom_target(GenerateConfigHPP ALL DEPENDS ${CONFIGURE_HPP_OUT})
+
+# 設定可執行檔，並確保 `configure.hpp` 運作成功
 add_executable(NLight41_LearningRepo NLight41_HLOA_v0.1.1.cpp)
+add_dependencies(NLight41_LearningRepo GenerateConfigHPP)
+
+# 確保專案能找到 `configure.hpp`
+include_directories(${CMAKE_BINARY_DIR}/cppad)
