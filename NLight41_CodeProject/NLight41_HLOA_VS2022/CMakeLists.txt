@@ -1,5 +1,5 @@
 # ============== MakeLists.txt ================
-# [v0.2.1] - 03.27.2025 by NLight41
+# [v0.2.3] - 03.27.2025 by NLight41
 
 # 主要功能: 
 # 1. 設定 CMake 版本、專案名稱與 C++ 標準
@@ -17,40 +17,37 @@ project(NLight41_LearningRepo)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# 啟用 FetchContent
+include(FetchContent)
 
-# ============ 第三方函式庫設定 ===============
 
-# 預設本機函式庫路徑
-set(EIGEN_INCLUDE_DIR "C:/toolbox/eigen-3.4.0")
-set(CPPAD_INCLUDE_DIR "C:/toolbox/CppAD-master/include")
+# ============ 透過 FetchContent 下載 & 設定路徑 ===============
 
-# 自動檢查本機是否已有 Eigen，如果沒有則自動下載 
-if(NOT EXISTS ${EIGEN_INCLUDE_DIR})
-	message(STATUS "未找到 Eigen 函式庫，將自動下載 Eigen 3.4.0")
-	include(FetchContent)
-	FetchContent_Declare(
-		eigen
-		GIT_REPOSITORY https://gitlab.com/libeigen/eigen.git
-		GIT_TAG 3.4.0
-	)
-	FetchContent_MakeAvailable(eigen)
-	set(EIGEN_INCLUDE_DIR ${eigen_SOURCE_DIR})
-endif()
+massege(STATUS "檢查與下載所需的第三方函式庫...")
 
-# 自動檢查本機是否已有 CppAD，如果沒有則自動下載 
-if(NOT EXISTS ${CPPAD_INCLUDE_DIR})
-	message(STATUS "未找到 CppAD 函式庫，將自動下載最新版本")
-	include(FetchContent)
-	FetchContent_Declare(
-		cppad
-		GIT_REPOSITORY https://github.com/coin-or/CppAD.git
-		GIT_TAG master
-	)
-	FetchContent_MakeAvailable(cppad)
-	set(CPPAD_INCLUDE_DIR ${cppad_SOURCE_DIR}/include)
-endif()
+# Eigen 3.4.0
+FetchContent_Declare(
+	eigen
+	GIT_REPOSITORY https://gitlab.com/libeigen/eigen.git
+	GIT_TAG 3.4.0
+)
+FetchContent_MakeAvailable(eigen)
+set(EIGEN_INCLUDE_DIR ${eigen_SOURCE_DIR})
 
-# 將函式庫 include 目錄加到專案
+
+# CppAD (最新版本)
+FetchContent_Declare(
+	cppad
+	GIT_REPOSITORY https://github.com/coin-or/CppAD.git
+	GIT_TAG master
+)
+FetchContent_MakeAvailable(cppad)
+set(CPPAD_INCLUDE_DIR ${cppad_SOURCE_DIR}/include)
+
+message(STATUS "Eigen 位於: ${EIGEN_INCLUDE_DIR}")
+message(STATUS "CppAD 位於: ${CPPAD_INCLUDE_DIR}")
+
+# 設定 include 目錄
 include_directories(${EIGEN_INCLUDE_DIR} ${CPPAD_INCLUDE_DIR})
 
 
@@ -68,6 +65,18 @@ set(CONFIGURE_HPP_OUT "${CMAKE_BINARY_DIR}/cppad/configure.hpp")
 #確保輸出目錄存在
 file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/cppad/")
 
+# 使用 `configure_file()` 進行變數替換 (如果有 `@VAR@` 變數)
+if(EXISTS ${CONFIGURE_HPP_IN})
+	configure_file(
+		${CONFIGURE_HPP_IN}
+		${CONFIGURE_HPP_OUT}
+		@ONLY
+	)
+else()
+	message(WARNING "找不到 configure.hpp.in，將使用 `add_custum_command()`")
+elseif()
+
+# 使用 `add_custom_command()` 確保 `configure.hpp` 會自動更新
 add_custom_command(
 	OUTPUT ${CONFIGURE_HPP_OUT}
 	COMMAND ${CMAKE_COMMAND} -E copy
@@ -81,8 +90,11 @@ add_custom_command(
 add_custom_target(GenerateConfigHPP ALL DEPENDS ${CONFIGURE_HPP_OUT})
 
 # 設定可執行檔，並確保 `configure.hpp` 運作成功
-add_executable(NLight41_LearningRepo NLight41_HLOA_v0.1.1.cpp)
+file(GLOB_RECURSE SOURCE_FILES ${CMAKE_SOURCE_DIR}/*.cpp)
+add_executable(NLight41_LearningRepo ${SOURCE_FILES})
 add_dependencies(NLight41_LearningRepo GenerateConfigHPP)
 
 # 確保專案能找到 `configure.hpp`
 include_directories(${CMAKE_BINARY_DIR}/cppad)
+
+message(STATUS "CMake 設定完成！")
