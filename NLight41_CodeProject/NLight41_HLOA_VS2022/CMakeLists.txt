@@ -23,7 +23,7 @@ include(FetchContent)
 
 # ============ 透過 FetchContent 下載 & 設定路徑 ===============
 
-massege(STATUS "檢查與下載所需的第三方函式庫...")
+message(STATUS "檢查與下載所需的第三方函式庫...")
 
 # Eigen 3.4.0
 FetchContent_Declare(
@@ -74,7 +74,7 @@ if(EXISTS ${CONFIGURE_HPP_IN})
 	)
 else()
 	message(WARNING "找不到 configure.hpp.in，將使用 `add_custum_command()`")
-elseif()
+endif()
 
 # 使用 `add_custom_command()` 確保 `configure.hpp` 會自動更新
 add_custom_command(
