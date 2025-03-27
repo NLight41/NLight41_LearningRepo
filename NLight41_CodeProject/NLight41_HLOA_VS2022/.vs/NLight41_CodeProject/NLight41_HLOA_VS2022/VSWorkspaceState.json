@@ -1,8 +1,0 @@
-{
-  "OutputFoldersPerTargetSystem": {
-    "Local Machine": [
-      "NLight41_CodeProject\\NLight41_HLOA_VS2022\\out\\build\\x64-Debug",
-      "NLight41_CodeProject\\NLight41_HLOA_VS2022\\out\\install\\x64-Debug"
-    ]
-  }
-}
