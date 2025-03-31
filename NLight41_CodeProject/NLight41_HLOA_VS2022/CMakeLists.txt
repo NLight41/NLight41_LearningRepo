@@ -1,5 +1,5 @@
 # ============== CMakeLists.txt ================
-# [v0.2.3] - 03.27.2025 by NLight41
+# [v0.2.4] - 03.31.2025 by NLight41
 
 # 主要功能: 
 # 1. 設定 CMake 版本、專案名稱與 C++ 標準
@@ -12,9 +12,6 @@
 # 設定 CMake 最低版本 & 專案名稱
 cmake_minimum_required(VERSION 3.16)
 project(NLight41_LearningRepo LANGUAGES CXX)
-set(CMAKE_LANGUAGES=CXX)
-
-# 設定 C++17 標準
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
