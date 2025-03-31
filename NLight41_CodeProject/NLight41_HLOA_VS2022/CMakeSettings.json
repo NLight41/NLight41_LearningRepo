@@ -7,7 +7,7 @@
             "inheritEnvironments": [ "msvc_x64_x64" ],
             "buildRoot": "${projectDir}\\out\\build\\${name}",
             "installRoot": "${projectDir}\\out\\install\\${name}",
-            "cmakeCommandArgs": "",
+            "cmakeCommandArgs": "-DCMAKE_Fortran_COMPILER= -DPKG_CONFIG_EXECUTABLE=",
             "buildCommandArgs": "",
             "ctestCommandArgs": "",
             "intelliSenseMode": "windows-msvc-x64"

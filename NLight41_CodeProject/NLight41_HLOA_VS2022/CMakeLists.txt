@@ -36,6 +36,8 @@ FetchContent_Declare(
 	cppad
 	GIT_REPOSITORY https://github.com/coin-or/CppAD.git
 	GIT_TAG master
+	CMAKE_ARGS
+		-DCPPAD_PKG_CONFIG_FILE=OFF		# 關閉 pkg-config 檔案生成
 )
 
 # 執行下載
