@@ -43,7 +43,7 @@ NLight41_LearningRepo © 2 by NLight41 is licensed under CC BY-NC 4.0
 [CppLearning 學習筆記 -尚未完成](https://nlight41.github.io/NLight41_LearningRepo/CppLearning/)  
 [GitLearning 學習筆記 -尚未完成](https://nlight41.github.io/NLight41_LearningRepo/GitLearning/)  
 [MarkDown 學習筆記 -持續更新中](https://nlight41.github.io/NLight41_LearningRepo/MarkDown)  
-[NLight41 HLOA 計劃](https://nlight41.github.io/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_Project/)
+[NLight41 HLOA 計劃](https://nlight41.github.io/NLIGHT41_HLOA/)
 
 ---
 ## 📌 學習概要  
