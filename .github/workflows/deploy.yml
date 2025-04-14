@@ -1,19 +1,18 @@
-name: GitHub Actions Dry Run
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 permissions:
-  contents: write  # 加上這行允許 push Pages
+  contents: write
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout with submodules
+      - name: Checkout repository
         uses: actions/checkout@v3
         with:
           submodules: recursive
@@ -23,12 +22,13 @@ jobs:
         with:
           node-version: 18
 
-      - name: Echo dry run
-        run: echo "目前未設定自動建置與發佈內容，僅作為初始化測試"
+      - name: Prepare deployment directory
+        run: |
+          mkdir -p docs
+          cp README.md docs/index.md
 
-      - name: Deploy empty placeholder (safe fallback)
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./placeholder
-          enable_jekyll: false
+          publish_dir: ./docs
