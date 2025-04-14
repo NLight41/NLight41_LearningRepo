@@ -1,12 +1,15 @@
-name: GitHub Pages Deploy
+name: GitHub Actions Dry Run
 
 on:
   push:
     branches:
       - main
 
+permissions:
+  contents: write  # 加上這行允許 push Pages
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,12 +23,12 @@ jobs:
         with:
           node-version: 18
 
-      - name: Build (replace with actual command if needed)
-        run: |
-          echo "尚未設置自動建置，若使用 Visual Studio 將採取手動建置"
+      - name: Echo dry run
+        run: echo "目前未設定自動建置與發佈內容，僅作為初始化測試"
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy empty placeholder (safe fallback)
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  
+          publish_dir: ./placeholder
+          enable_jekyll: false
