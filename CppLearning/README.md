@@ -21,20 +21,33 @@
     3. 函式運用
     4. 資料結構
 ```
-  變數與型別
+壹、基礎語法
+  1. 變數與型別
     int, double, char, bool, string, auto,型別轉換、記憶體配置、數值精度處理
-  常數與巨集
+  2. 常數與巨集
     const, constexpr, #define,巨集定義 vs 常數安全性、編譯期常數
-  運算子
+  3. 運算子
     算術：+ - * / %  邏輯：`&&,
-  輸入輸出 I/O
+  4. 輸入輸出 I/O
     cin, cout, getline, printf, scanf,字串處理、多行輸入、格式化輸出
-  註解與命名規範
+  5. 註解與命名規範
     //, /* */，駝峰式、底線命名,良好風格建立、易讀性維護
-  主程式結構
+  6. 主程式結構
     main(), return, 編譯鏈,C++ 程式執行流程與錯誤碼結構
-  命名空間
+  7. 命名空間
     using namespace std;, std::,命名衝突處理、命名空間隔離設計
+
+貳、控制流程
+  1. 條件判斷,
+    if / else if / else, switch-case, ?: 三元運算,最小決策單位設計、條件導向邏輯
+  2. 迴圈結構,
+    for, while, do while,範圍設計、計數器控制、巢狀迴圈最佳化
+  3. 流程控制語句,
+    break, continue, return, exit(),提早中斷、跳出邏輯、early return 最佳實踐
+  4. 錯誤處理機制,
+    try-catch, throw, assert,例外安全、除錯技巧、邏輯斷言設計
+  5. 旗標變數的取代設計,
+    return、函式結構優化,精簡流程、提高邏輯清晰度
 ```
 
 ---
