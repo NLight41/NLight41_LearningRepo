@@ -36,17 +36,44 @@ C++ 通常輸入輸出以 `cin`,`cout` 為主。
 # 02-ControlFlow  
 ## 控制流程-if/else  
   
-### 在使用 if/else 前，我認為該優先思考的一些項目：
-原則,說明,為什麼重要？（理由與效益）
+### 在使用 if/else 前，我認為該優先思考的一些項目：  
+  
 1. 條件導向思考：  
 在撰寫 if/else 前，先釐清所有可能的條件範圍與分類對應的行為,可幫助避免重複條件、遺漏邏輯，使判斷邏輯更完整，結構更穩定  
 2. 最小決策單位：  
 每個 if/else 僅處理一項單一邏輯，避免多層巢狀與複合條件,提升可讀性，便於除錯與維護，並減少誤解或錯誤  
 3. 避免旗標變數：  
 避免多餘的 bool 旗標搭配後續判斷，應直接採用 return / break 等控制流,可精簡程式碼結構、減少變數依賴，提升邏輯清晰度與直觀性  
-
+  
+基礎 if/else 實作範例：  
 ```cpp
+if (score >= 90) {
+    cout << "A";
+} else {
+    if (score >= 80) {
+        cout << "B";
+    } else {
+        if (score >= 70) {
+            cout << "C";
+        } else {
+            cout << "D";
+        }
+    }
+}
+```
 
+  
+若加入 else if 函數？  
+```cpp
+if (score >= 90) {
+    cout << "A";
+} else if (score >= 80) {
+    cout << "B";
+} else if (score >= 70) {
+    cout << "C";
+} else {
+    cout << "D";
+}
 ```
 ---
 
@@ -72,5 +99,9 @@ C++ 通常輸入輸出以 `cin`,`cout` 為主。
 ## 04-DataStructures  
 - 資料結構  
 
+
+```cpp
+  
+```
 ---
 > [返回網頁目錄](https://nlight41.github.io/NLight41_LearningRepo/WebStorage/)  
