@@ -20,7 +20,22 @@
       2.3 for 迴圈基礎
     3. 函式運用
     4. 資料結構
-    
+```
+  變數與型別
+    int, double, char, bool, string, auto,型別轉換、記憶體配置、數值精度處理
+  常數與巨集
+    const, constexpr, #define,巨集定義 vs 常數安全性、編譯期常數
+  運算子
+    算術：+ - * / %  邏輯：`&&,
+  輸入輸出 I/O
+    cin, cout, getline, printf, scanf,字串處理、多行輸入、格式化輸出
+  註解與命名規範
+    //, /* */，駝峰式、底線命名,良好風格建立、易讀性維護
+  主程式結構
+    main(), return, 編譯鏈,C++ 程式執行流程與錯誤碼結構
+  命名空間
+    using namespace std;, std::,命名衝突處理、命名空間隔離設計
+```
 
 ---
 # 01-Basics  
